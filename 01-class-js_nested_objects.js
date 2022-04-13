@@ -1,10 +1,10 @@
 // Class code examples
-
+/*
 const student1 = {name: "Bob", age: 17}
 const student2 = {name: "Susy", age: 18}
 const student3 = {name: "Ted", age: 18}
 
-const students = [
+const studentsList = [
     {name: "Bob", age: 17},
     {name: "Susy", age: 18},
     {name: "Ted", age: 18}
@@ -18,6 +18,27 @@ console.log(students[students.indexOf("Susy")]) // Thsi will not work
 const Bob = {name: "Bob", age: 17}
 const Susy = {name: "Susy", age: 18}
 const Ted = {name: "Ted", age: 18}
+const Aleix = {name: "Ted", age: 18}
+const Marco = {name: "Ted", age: 18}
+
+const studentsDictionary = {
+    Bob,
+    Susy, // this is equivalent to "Susy": Susy
+    Ted,
+    Aleix,
+    Marco
+};
+console.log(studentsObj.Susy.age)
+
+for (const student in studentsDictionary){
+    console.log(studentsDictionary[student])
+}
+
+for(const student of studentList){
+    console.log(student.age)
+}
+
+
 
 const studentsObj = {
     Bob: {name: "Bob", age: 17},
@@ -39,7 +60,7 @@ const classroom = {
 console.log(classroom.carlos.friends.length)
 
 for(const friend of classroom.carol.friends) console.log(friend.name)
-
+*/
 
 // Example 2
 
@@ -49,7 +70,7 @@ for(const friend of classroom.carol.friends) console.log(friend.name)
             sugar: true,
             price: 1,
             weight: .56,
-            ingredients: ['water', 'sugar', 'sweetener']
+            ingredients: ['water', 'sugar', 'orange flavor']
         },
         {
             name: 'Jagger',
@@ -59,7 +80,13 @@ for(const friend of classroom.carol.friends) console.log(friend.name)
             ingredients: ['fantasía', 'alcohol', 'mabad decisions']
         }
     ]
+    for (const drink of drinks) {
+        for (const ingredient of drink.ingredients) {
+          console.log(`One ingredient of ${drink.name}: `, ingredient);
+        }
+      }
 
+/*
     // Array of objects iteration
     for (let i = 0; i < drinks.length; i++) {
 
@@ -75,3 +102,4 @@ for(const friend of classroom.carol.friends) console.log(friend.name)
         console.log(`The drink ${drink.name} weight ${drink.weight}. The ingredients are:`)
         drink.ingredients.forEach(ing => console.log('- ', ing))
     })
+*/

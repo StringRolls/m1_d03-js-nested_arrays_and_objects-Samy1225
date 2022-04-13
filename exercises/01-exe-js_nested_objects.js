@@ -7,13 +7,16 @@ const designers = [
 ];
 
 // 1: name of a designer Bob
-//  ... your code here
+console.log(designers[0].name)
 
 // 2: Sarah' age
-//  ... your code here
+console.log(designers[3].age)
 
 // 3: List of all designers' names
-//  ... your code here
+//oneDesigner is placeholder nombre no cambia pero el valor actualiza cada iteraccion
+for (const listDesigners of designers){
+  console.log(listDesigners.name)
+}
 
 
 
@@ -99,7 +102,7 @@ const schoolSystem = {
 };
 
 // 1: Retrieve the “Fake School 3” object
-//  ... your code here
+console.log(schoolSystem.schools[2])
 
 // 2: Retrieve the teacher with the first name of “Nathanael”
 //  ... your code here
