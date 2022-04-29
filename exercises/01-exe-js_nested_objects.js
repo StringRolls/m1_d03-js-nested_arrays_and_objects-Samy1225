@@ -104,11 +104,11 @@ const schoolSystem = {
 // 1: Retrieve the “Fake School 3” object
 console.log(schoolSystem.schools[2])
 
-// 2: Retrieve the teacher with the first name of “Nathanael”
-//  ... your code here
+// 2: Retrieve the teacher with the first name of “Nathgitanael”
+console.log(schoolSystem.schools[2].classRooms[1].teacher.firstName)
 
 // 3: Retrieve the student with the first name of “Saul”
-//  ... your code here
+console.log(schoolSystem.schools[2].classRooms[0].students[3].firstName)
 
 // 4: Add a student with the name of Lucille D. Lozano to Fake School 2, in the first classroom.
-//  ... your code here
+console.log(schoolSystem.schools[2].classRooms[0].students.push({firstName: "Lucille D.Lozano"})
